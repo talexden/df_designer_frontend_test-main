@@ -1,12 +1,16 @@
 import './graph-box.css'
-import {GraphType} from '../type/graph-type';
+import {inGraphsSetType} from '../type/in-graphs-set-type';
+import CSS from 'csstype';
 
 type GraphBoxType = {
-  node: GraphType,
-
+  // node: GraphType,
+  name: string
 }
 
-function GraphBox ():JSX.Element {
+
+
+function GraphBox ({name}: GraphBoxType ):JSX.Element {
+  const boxStyle: CSS.Properties = ({gridArea: name});
   let graphBoxMod = '';
   if (false) {
     graphBoxMod = ' graph-box--first'
@@ -16,7 +20,7 @@ function GraphBox ():JSX.Element {
   }
 
   return(
-    <div className={`graph-box${graphBoxMod}`}>Lorem</div>
+    <div style={boxStyle} className={`graph-box${graphBoxMod}`}>{name}</div>
   )
 }
 

@@ -1,29 +1,12 @@
 .graph-box {
-    display: block;
-    position: relative;
-    margin: 40px;
-    width: var(--box-width);
+    /*display: block;*/
+    /*position: relative;*/
+    /*width: var(--box-width);*/
     height: var(--box-height);
     font-size: 24px;
     text-align: center;
     line-height: var(--box-height);
     background-color: var(--ghosty-grin);
     border: var(--border-box);
-}
-
-
-
-.graph-box:before,
-.graph-box:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0.6em;
-    content: '';
-    width: 1px;
-    height: var(--box-height);
-    background-color: var(--red);
-}
-.graph-box:after {
-    left: 4em;
+    z-index: 2;
 }

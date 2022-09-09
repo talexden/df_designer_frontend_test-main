@@ -1,0 +1,4 @@
+.edges__line {
+    stroke: var(--blue);
+    stroke-width: 2px;
+}

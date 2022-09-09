@@ -1,7 +1,9 @@
 :root {
   --black: #000000;
+  --white: #ffffff;
   --red: #F00000;
-  --ghosty-grin: #00F00030;
+  --ghosty-grin: #99D99D;
+  --blue: #61DAFB;
   --box-width: 5em;
   --box-height: 3em;
   --border-box: 2px solid var(--black);

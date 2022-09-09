@@ -1,15 +1,18 @@
-import { useState } from "react";
 import "./App.css";
-import GraphBox from './graph-box/graph-box';
+import Graphs from './graphs/graphs';
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return(
-  <div>
-    <p>Графы</p>
-    <GraphBox />
-  </div>
+    <div className='main'>
+      <div className='main__menu'>Dropdown Menu</div>
+      <Graphs />
+    </div>
   )
 }
 
